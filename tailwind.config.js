@@ -22,12 +22,6 @@ module.exports = {
       'goluboi': '#75A4FF',
       'yellow': '#FFFBD4',
       'black': '#000000',
-
-      'purple': '#7e5bef',
-      'pink': '#ff49db',
-      'orange': '#ff7849',
-      'green': '#13ce66',
-      'gray': '#8492a6',
     },
     fontFamily: {
       roboto: ['Roboto', 'sans-serif'],
