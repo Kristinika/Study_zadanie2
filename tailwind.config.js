@@ -6,11 +6,17 @@ module.exports = {
   theme: {
     extend: {},
     screens: {
+      'xs': '480px',
       'sm': '640px',
       'md': '768px',
+      'dl': '870px',
+      'gd': '920px',
       'lg': '1024px',
+      'xg': '1155px',
       'xl': '1280px',
+      '1xl': '1440px',
       '2xl': '1536px',
+      '3xl': '1680px',
     },
     colors: {
       'white' : '#FFFFFF',
