@@ -1,8 +1,7 @@
-    .swiper-container {
+  .swiper-container {
     overflow: hidden;
     width: 100%;
     position: relative;
-    padding-bottom: 60px;
   }
   .control-container {
     display: flex;

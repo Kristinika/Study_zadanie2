@@ -14,24 +14,30 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body class="bg-gray-light font-roboto">
-  <header class="bg-white px-5 gd:px-20 xg:px-[200px] 1xl:px-[300px] 3xl:px-[450px]">
+  <header class="bg-white px-5 gd:px-20 xg:px-[200px] 1xl:px-[300px] 3xl:px-[450px] fixed top-0 left-0 right-0 z-40 shadow-md">
     <div class="flex items-center justify-between py-4">
       <div class="flex items-center">
-        <img src="img/logo.png" alt="Логотип" class="h-10 gd:h-12">
+          <img src="img/logo.png" alt="Логотип" class="h-9 xs:h-10 gd:h-12">
       </div>
-      <div class="flex items-center space-x-6 text-xs gd:text-sm">
-        <a href="mailto:example@mail.com" class="text-gray md:block hidden">office@arbis29.ru</a>
-        <a href="tel:+70000000000" class="text-gray md:block hidden">(8182)
-          <span class="text-gray text-base gd:text-lg font-medium"> 60-31-96 </span>
+      <div class="md:flex items-center space-x-4 text-xs gd:text-sm hidden">
+        <a href="mailto:office@arbis29.ru" class="text-gray">office@arbis29.ru</a>
+        <a href="tel:8182603196" class="text-gray">(8182)
+            <span class="text-gray text-base gd:text-lg font-medium"> 60-31-96 </span>
         </a>
-        <button class="bg-[#FD5B4B] text-white font-light px-2 py-2 gd:px-4 gd:py-2 rounded-md hover:bg-blue-600">
-          Заказать обратный звонок
+        <button class="bg-[#FD5B4B] text-white font-light px-2 py-2 gd:px-4 gd:py-2 rounded-md hover:bg-[#c74034]">
+            Заказать обратный звонок
         </button>
       </div>
+      <!-- Бургер-меню кнопка -->
+      <button id="burger-button" class="md:hidden block text-gray focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+      </button>
     </div>
     <div class="bg-gray h-[1px] md:block hidden"></div>
     <nav class="bg-white md:block hidden">
-      <div class="flex justify-between py-4 text-xs gd:text-sm">
+      <div class="flex justify-between py-3 text-xs gd:text-sm">
         <a href="#" class="text-gray font-light hover:text-blue">О компании</a>
         <a href="#" class="text-gray font-light hover:text-blue">Программы</a>
         <a href="#" class="text-gray font-light hover:text-blue">Центр сопровождения</a>
@@ -42,8 +48,30 @@
       </div>
     </nav>
   </header>
+  
+  <!-- Меню бургера -->
+  <nav id="mobile-menu" class="bg-white md:hidden fixed top-16 right-0 xs:w-1/2 w-2/3 shadow-xl z-50 hidden">
+    <div class="flex flex-col py-4 px-5 xs:text-sm text-xs text-end">
+      <a href="#" class="text-gray font-light hover:text-blue py-2">О компании</a>
+      <a href="#" class="text-gray font-light hover:text-blue py-2">Программы</a>
+      <a href="#" class="text-gray font-light hover:text-blue py-2">Центр сопровождения</a>
+      <a href="#" class="text-gray font-light hover:text-blue py-2">Центр внедрения</a>
+      <a href="#" class="text-gray font-light hover:text-blue py-2">Безопасность</a>
+      <a href="#" class="text-gray font-light hover:text-blue py-2">Новости</a>
+      <a href="#" class="text-gray font-light hover:text-blue py-2">Контакты</a>
+      <div class="flex flex-col space-y-3 mt-4">
+        <a href="mailto:office@arbis29.ru" class="text-gray">office@arbis29.ru</a>
+        <a href="tel:8182603196" class="text-gray">(8182)
+          <span class="text-gray font-medium"> 60-31-96 </span>
+        </a>
+        <button class="bg-[#FD5B4B] text-white font-light px-2 py-2 gd:px-4 gd:py-2 rounded-md hover:bg-[#c74034]">
+          Заказать обратный звонок
+        </button>
+      </div>
+    </div>
+  </nav>
 <!-- Мы предлагаем -->
-  <section class="bg-[#222222] py-14 sm:py-20 dl:py-32 font-bold relative"
+  <section class="bg-[#222222] pb-20 sm:pb-28 dl:pb-40 pt-32 sm:pt-48 dl:pt-72 font-bold relative"
     style="background-image: url('img/hand.png'); background-position: right center; background-repeat: no-repeat; background-size: contain;">
     <div class="mx-auto flex flex-col dl:flex-row items-center justify-between text-center dl:text-left px-7 dl:px-0">
       <div class="flex-1 space-y-[40px] lg:space-y-[60px] pl-0 dl:pl-[80px] xl:pl-[120px] 2xl:pl-[220px]">
@@ -1422,92 +1450,97 @@
     </div>
   </section>
 <!-- Расширение для -->
-<section class="pt-0 md:pt-10 pb-8 md:pb-[60px] font-bold px-7 dl:px-[80px] xl:px-[120px] 2xl:px-[220px]">
-  <div class="mx-auto text-center">
-    <h2 class="mb-14 sm:mb-20 text-[25px] sm:text-3xl xg:text-4xl text-gray-dark">Наши работы</h2>
-  </div>
-  <div class="swiper-container bg-[radial-gradient(ellipse_at_bottom_left,_#4154FF,_#23242B)] rounded-xl pr-7 md:pr-0 pl-6 md:pl-10 pt-[51px] pb-[20px] relative">
-    <div class="swiper-wrapper pb-5">
-      <!-- Слайд 1 -->
-      <div class="swiper-slide">
-        <div class="mx-auto flex flex-col md:flex-row justify-between items-center md:items-start text-gray-dark md:space-x-4 space-x-0">
-          <div class="flex-1 flex flex-col space-y-8 items-center md:items-start text-white text-center md:text-left">
-            <h2 class="text-[30px] sm:text-[32px] xg:text-[44px] leading-[35px] xg:leading-[46.88px]">Расширение для «Бухгалтерия предприятия»</h2>
-            <p class="text-[16px] sm:text-[18px] xl:text-[22px] leading-[25.78px]">
-              В верхнюю часть печатной формы счета добавлен текст:
-              <span class="text-[#FBE8A6]">Внимание! Ваш долг на [текущая дата] составляет [сумма], в том числе с истекшим сроком оплаты [сумма]</span>
-            </p>
-            <button class="bg-blue text-white text-base px-[60px] md:px-[80px] py-[12px] md:py-[17px] rounded-md self-center md:self-start">Подробнее</button>
-          </div>
-          <div class="flex-1 flex items-center justify-center py-[60px] pr-0 md:pr-5">
-            <img src="img/pc.png" alt="Компьютер" class="w-full md:w-auto">
-          </div>
-        </div>
-      </div><!-- Слайд 2 -->
-      <div class="swiper-slide">
-        <div class="mx-auto flex flex-col md:flex-row justify-between items-center md:items-start text-gray-dark md:space-x-4 space-x-0">
-          <div class="flex-1 flex flex-col space-y-8 items-center md:items-start text-white text-center md:text-left">
-            <h2 class="text-[30px] sm:text-[32px] xg:text-[44px] leading-[35px] xg:leading-[46.88px]">Расширение для «Бухгалтерия предприятия»</h2>
-            <p class="text-[16px] sm:text-[18px] xl:text-[22px] leading-[25.78px]">
-              В верхнюю часть печатной формы счета добавлен текст:
-              <span class="text-[#FBE8A6]">Внимание! Ваш долг на [текущая дата] составляет [сумма], в том числе с истекшим сроком оплаты [сумма]</span>
-            </p>
-            <button class="bg-blue text-white text-base px-[60px] md:px-[80px] py-[12px] md:py-[17px] rounded-md self-center md:self-start">Подробнее</button>
-          </div>
-          <div class="flex-1 flex items-center justify-center py-[60px] pr-0 md:pr-5">
-            <img src="img/pc.png" alt="Компьютер" class="w-full md:w-auto">
+  <section class="pt-0 md:pt-10 pb-8 md:pb-[60px] font-bold px-7 dl:px-[80px] xl:px-[120px] 2xl:px-[220px]">
+    <div class="mx-auto text-center">
+      <h2 class="mb-14 sm:mb-20 text-[25px] sm:text-3xl xg:text-4xl text-gray-dark">Наши работы</h2>
+    </div>
+    <div class="swiper-container bg-[radial-gradient(ellipse_at_bottom_left,_#4154FF,_#23242B)] rounded-xl pr-7 md:pr-0 pl-6 md:pl-10 pt-[51px] pb-[40px] relative">
+      <div class="swiper-wrapper pb-5">
+        <!-- Слайд 1 -->
+        <div class="swiper-slide relative">
+          <div class="swiper-slide">
+            <div class="mx-auto flex flex-col md:flex-row justify-between items-center md:items-start text-gray-dark md:space-x-4 space-x-0">
+              <div class="flex-1 flex flex-col space-y-8 items-center md:items-start text-white text-center md:text-left">
+                <h2 class="text-[30px] sm:text-[32px] xg:text-[44px] leading-[35px] xg:leading-[46.88px]">Расширение для «Бухгалтерия предприятия»</h2>
+                <p class="text-[16px] sm:text-[18px] xl:text-[22px] leading-[25.78px]">
+                  В верхнюю часть печатной формы счета добавлен текст:
+                  <span class="text-[#FBE8A6]">Внимание! Ваш долг на [текущая дата] составляет [сумма], в том числе с истекшим сроком оплаты [сумма]</span>
+                </p>
+                <button class="bg-blue text-white text-base px-[60px] md:px-[80px] py-[12px] md:py-[17px] rounded-md self-center md:self-start">Подробнее</button>
+              </div>
+              <div class="flex-1 flex items-center justify-center py-[60px] pr-0 md:pr-5">
+                <img src="img/pc.png" alt="Компьютер" class="w-full md:w-auto">
+              </div>
+            </div>
           </div>
         </div>
-      </div><!-- Слайд 3 -->
-      <div class="swiper-slide">
-        <div class="mx-auto flex flex-col md:flex-row justify-between items-center md:items-start text-gray-dark md:space-x-4 space-x-0">
-          <div class="flex-1 flex flex-col space-y-8 items-center md:items-start text-white text-center md:text-left">
-            <h2 class="text-[30px] sm:text-[32px] xg:text-[44px] leading-[35px] xg:leading-[46.88px]">Расширение для «Бухгалтерия предприятия»</h2>
-            <p class="text-[16px] sm:text-[18px] xl:text-[22px] leading-[25.78px]">
-              В верхнюю часть печатной формы счета добавлен текст:
-              <span class="text-[#FBE8A6]">Внимание! Ваш долг на [текущая дата] составляет [сумма], в том числе с истекшим сроком оплаты [сумма]</span>
-            </p>
-            <button class="bg-blue text-white text-base px-[60px] md:px-[80px] py-[12px] md:py-[17px] rounded-md self-center md:self-start">Подробнее</button>
-          </div>
-          <div class="flex-1 flex items-center justify-center py-[60px] pr-0 md:pr-5">
-            <img src="img/pc.png" alt="Компьютер" class="w-full md:w-auto">
+        <!-- Слайд 2 -->
+        <div class="swiper-slide">
+          <div class="mx-auto flex flex-col md:flex-row justify-between items-center md:items-start text-gray-dark md:space-x-4 space-x-0">
+            <div class="flex-1 flex flex-col space-y-8 items-center md:items-start text-white text-center md:text-left">
+              <h2 class="text-[30px] sm:text-[32px] xg:text-[44px] leading-[35px] xg:leading-[46.88px]">Для «Бухгалтерия предприятия»</h2>
+              <p class="text-[16px] sm:text-[18px] xl:text-[22px] leading-[25.78px]">
+                В верхнюю часть печатной формы счета добавлен текст:
+                <span class="text-[#FBE8A6]">Внимание! Ваш долг на [текущая дата] составляет [сумма], в том числе с истекшим сроком оплаты [сумма]</span>
+              </p>
+              <button class="bg-blue text-white text-base px-[60px] md:px-[80px] py-[12px] md:py-[17px] rounded-md self-center md:self-start">Подробнее</button>
+            </div>
+            <div class="flex-1 flex items-center justify-center py-[60px] pr-0 md:pr-5">
+              <img src="img/pc.png" alt="Компьютер" class="w-full md:w-auto">
+            </div>
           </div>
         </div>
-      </div><!-- Слайд 4 -->
-      <div class="swiper-slide">
-        <div class="mx-auto flex flex-col md:flex-row justify-between items-center md:items-start text-gray-dark md:space-x-4 space-x-0">
-          <div class="flex-1 flex flex-col space-y-8 items-center md:items-start text-white text-center md:text-left">
-            <h2 class="text-[30px] sm:text-[32px] xg:text-[44px] leading-[35px] xg:leading-[46.88px]">Расширение для «Бухгалтерия предприятия»</h2>
-            <p class="text-[16px] sm:text-[18px] xl:text-[22px] leading-[25.78px]">
-              В верхнюю часть печатной формы счета добавлен текст:
-              <span class="text-[#FBE8A6]">Внимание! Ваш долг на [текущая дата] составляет [сумма], в том числе с истекшим сроком оплаты [сумма]</span>
-            </p>
-            <button class="bg-blue text-white text-base px-[60px] md:px-[80px] py-[12px] md:py-[17px] rounded-md self-center md:self-start">Подробнее</button>
+        <!-- Слайд 3 -->
+        <div class="swiper-slide">
+          <div class="mx-auto flex flex-col md:flex-row justify-between items-center md:items-start text-gray-dark md:space-x-4 space-x-0">
+            <div class="flex-1 flex flex-col space-y-8 items-center md:items-start text-white text-center md:text-left">
+              <h2 class="text-[30px] sm:text-[32px] xg:text-[44px] leading-[35px] xg:leading-[46.88px]">Расширение предприятия</h2>
+              <p class="text-[16px] sm:text-[18px] xl:text-[22px] leading-[25.78px]">
+                В верхнюю часть печатной формы счета добавлен текст:
+                <span class="text-[#FBE8A6]">Внимание! Ваш долг на [текущая дата] составляет [сумма], в том числе с истекшим сроком оплаты [сумма]</span>
+              </p>
+              <button class="bg-blue text-white text-base px-[60px] md:px-[80px] py-[12px] md:py-[17px] rounded-md self-center md:self-start">Подробнее</button>
+            </div>
+            <div class="flex-1 flex items-center justify-center py-[60px] pr-0 md:pr-5">
+              <img src="img/pc.png" alt="Компьютер" class="w-full md:w-auto">
+            </div>
           </div>
-          <div class="flex-1 flex items-center justify-center py-[60px] pr-0 md:pr-5">
-            <img src="img/pc.png" alt="Компьютер" class="w-full md:w-auto">
+        </div>
+        <!-- Слайд 4 -->
+        <div class="swiper-slide">
+          <div class="mx-auto flex flex-col md:flex-row justify-between items-center md:items-start text-gray-dark md:space-x-4 space-x-0">
+            <div class="flex-1 flex flex-col space-y-8 items-center md:items-start text-white text-center md:text-left">
+              <h2 class="text-[30px] sm:text-[32px] xg:text-[44px] leading-[35px] xg:leading-[46.88px]">Бухгалтерия предприятия</h2>
+              <p class="text-[16px] sm:text-[18px] xl:text-[22px] leading-[25.78px]">
+                В верхнюю часть печатной формы счета добавлен текст:
+                <span class="text-[#FBE8A6]">Внимание! Ваш долг на [текущая дата] составляет [сумма], в том числе с истекшим сроком оплаты [сумма]</span>
+              </p>
+              <button class="bg-blue text-white text-base px-[60px] md:px-[80px] py-[12px] md:py-[17px] rounded-md self-center md:self-start">Подробнее</button>
+            </div>
+            <div class="flex-1 flex items-center justify-center py-[60px] pr-0 md:pr-5">
+              <img src="img/pc.png" alt="Компьютер" class="w-full md:w-auto">
+            </div>
           </div>
+        </div>
+      </div>
+      <!-- Стрелоки и пагинация -->
+      <div class="control-container">
+        <div class="custom-swiper-button-prev">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="42" height="42" rx="11" stroke="#BDCADB" stroke-width="2"/>
+            <path d="M29 22H15M15 22L22 29M15 22L22 15" stroke="#BDCADB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="swiper-pagination pb-0 md:pb-2"></div>
+        <div class="custom-swiper-button-next">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="42" height="42" rx="11" stroke="#BDCADB" stroke-width="2"/>
+            <path d="M15 22H29M29 22L22 15M29 22L22 29" stroke="#BDCADB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </div>
       </div>
     </div>
-    <!-- Стрелоки и пагинация -->
-    <div class="control-container">
-      <div class="custom-swiper-button-prev">
-        <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="1" y="1" width="42" height="42" rx="11" stroke="#BDCADB" stroke-width="2"/>
-          <path d="M29 22H15M15 22L22 29M15 22L22 15" stroke="#BDCADB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      <div class="swiper-pagination pb-0 md:pb-2"></div>
-      <div class="custom-swiper-button-next">
-        <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="1" y="1" width="42" height="42" rx="11" stroke="#BDCADB" stroke-width="2"/>
-          <path d="M15 22H29M29 22L22 15M29 22L22 29" stroke="#BDCADB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
 <!-- Отзывы -->
   <section class="pt-0 md:pt-10 pb-8 md:pb-[60px] px-7 dl:px-[80px] xl:px-[120px] 2xl:px-[220px]">
@@ -1824,11 +1857,15 @@
               nextEl: '.custom-swiper-button-next',
               prevEl: '.custom-swiper-button-prev',
           },
-          slidesPerView: 'auto', // позволяет слайдам иметь разную ширину
-          spaceBetween: 50, // пространство между слайдами
-          freeMode: true, // позволяет скроллить слайды свободно
+          slidesPerView: 'auto',
+          spaceBetween: 50,
+          freeMode: true,
           centeredSlides: false, 
 
+      });
+      document.getElementById('burger-button').addEventListener('click', function () {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden'); 
       });
   </script>
 
