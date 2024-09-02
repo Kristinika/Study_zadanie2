@@ -1458,15 +1458,15 @@
             <div class="mx-auto flex flex-col md:flex-row justify-between items-center md:items-start text-gray-dark md:space-x-4 space-x-0">
               <div class="flex-1 flex flex-col space-y-8 items-center md:items-start text-white text-center md:text-left">
                 <h2 class="text-[30px] sm:text-[32px] xg:text-[44px] leading-[35px] xg:leading-[46.88px]">Расширение для «Бухгалтерия предприятия»</h2>
-                <p class="text-[16px] sm:text-[18px] xl:text-[22px] leading-[25.78px] md:pr-[85px] pr-0">
+                <p class="text-[16px] sm:text-[18px] xl:text-[22px] leading-[25.78px] lg:pr-[85px] md:pr-[70px] pr-0">
                   В верхнюю часть печатной формы счета добавлен текст:
                   <span class="text-[#FBE8A6]">Внимание! Ваш долг на [текущая дата] составляет [сумма], в том числе с истекшим сроком оплаты [сумма]</span>
                 </p>
                 <button class="bg-blue text-white text-base px-[60px] md:px-[80px] py-[12px] md:py-[17px] rounded-md self-center md:self-start">Подробнее</button>
               </div>
-
+              <!-- желтый результат и пунктир -->
               <div class="md:flex hidden absolute inset-0  flex-col items-center justify-center 
-                lg:top-36 lg:right-5 lg:left-0 2xl:top-36 2xl:-right-6 2xl:left-0 3xl:top-36 3xl:right-5 3xl:left-0 -top-56 right-12">
+                lg:top-36 lg:right-5 lg:left-0 2xl:top-36 2xl:-right-6 2xl:left-0 3xl:top-36 3xl:right-5 3xl:left-0 -top-36 right-12">
                 <div class="relative z-0 lg:hidden block">
                   <svg class="lg:hidden block w-32" viewBox="0 0 192 69" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M191 26.3334C44.7432 -42.5898 -43.8854 48.8897 24.4738 68" stroke="#AFC7EC" stroke-linecap="round" stroke-dasharray="2 2"/>
@@ -1490,7 +1490,7 @@
                     <path d="M0.499862 87.5001C114 104 156.5 19.9999 114.001 1.00023" stroke="#AFC7EC" stroke-linecap="round" stroke-dasharray="2 2"/>
                   </svg>                                        
                 </div>
-                <img src="/img/pc.png" alt="Компьютер" class="w-full md:w-auto">
+                <img src="/img/pc.png" alt="Компьютер" class="w-full md:w-auto pt-8">
               </div>   
               <div class="block xs:hidden bg-[#FCE181] py-2 px-3 rounded-lg text-center mb-7">
                 <p class="1xl:text-base md:text-sm text-xs font-bold text-[#292D57]">результат</p>
@@ -1503,15 +1503,43 @@
           <div class="mx-auto flex flex-col md:flex-row justify-between items-center md:items-start text-gray-dark md:space-x-4 space-x-0">
             <div class="flex-1 flex flex-col space-y-8 items-center md:items-start text-white text-center md:text-left">
               <h2 class="text-[30px] sm:text-[32px] xg:text-[44px] leading-[35px] xg:leading-[46.88px]">Для «Бухгалтерия предприятия»</h2>
-              <p class="text-[16px] sm:text-[18px] xl:text-[22px] leading-[25.78px]">
+              <p class="text-[16px] sm:text-[18px] xl:text-[22px] leading-[25.78px] lg:pr-[85px] md:pr-[70px] pr-0">
                 В верхнюю часть печатной формы счета добавлен текст:
                 <span class="text-[#FBE8A6]">Внимание! Ваш долг на [текущая дата] составляет [сумма], в том числе с истекшим сроком оплаты [сумма]</span>
               </p>
               <button class="bg-blue text-white text-base px-[60px] md:px-[80px] py-[12px] md:py-[17px] rounded-md self-center md:self-start">Подробнее</button>
             </div>
-            <div class="flex-1 flex items-center justify-center py-[60px] pr-0 md:pr-5">
-              <img src="/img/pc.png" alt="Компьютер" class="w-full md:w-auto">
+            <!-- желтый результат и пунктир -->
+            <div class="md:flex hidden absolute inset-0  flex-col items-center justify-center 
+            lg:top-36 lg:right-5 lg:left-0 2xl:top-36 2xl:-right-6 2xl:left-0 3xl:top-36 3xl:right-5 3xl:left-0 -top-36 right-12">
+              <div class="relative z-0 lg:hidden block">
+                <svg class="lg:hidden block w-32" viewBox="0 0 192 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M191 26.3334C44.7432 -42.5898 -43.8854 48.8897 24.4738 68" stroke="#AFC7EC" stroke-linecap="round" stroke-dasharray="2 2"/>
+                </svg>                    
+              </div>
+              <div class="bg-[#FCE181] p-2 rounded-lg text-center relative z-10 1xl:right-10 lg:right-5 right-3 lg:top-5 -top-3">
+                <p class="1xl:text-base text-sm font-bold text-[#292D57]">результат</p>
+              </div>
+              <div class="relative z-0 lg:block hidden">
+                <svg class="1xl:w-60 w-40" viewBox="0 0 241 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M240 67.0001C55.9999 177 -55.5003 31.0009 30.4997 0.501333" stroke="#AFC7EC" stroke-linecap="round" stroke-dasharray="2 2"/>
+                </svg>                  
+              </div>
             </div>
+            <div class="flex-1 flex items-center justify-center xs:py-[60px] py-[35px] pr-0 md:pr-5 relative">
+              <div class="hidden xs:block md:hidden absolute top-2 -right-3 mt-2 mr-2">
+                <div class="bg-[#FCE181] py-2 px-3 rounded-lg text-center">
+                  <p class="1xl:text-base md:text-sm text-xs font-bold text-[#292D57]">результат</p>
+                </div>
+                <svg class="w-24" viewBox="0 0 131 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.499862 87.5001C114 104 156.5 19.9999 114.001 1.00023" stroke="#AFC7EC" stroke-linecap="round" stroke-dasharray="2 2"/>
+                </svg>                                        
+              </div>
+              <img src="/img/pc.png" alt="Компьютер" class="w-full md:w-auto pt-8">
+            </div>   
+            <div class="block xs:hidden bg-[#FCE181] py-2 px-3 rounded-lg text-center mb-7">
+              <p class="1xl:text-base md:text-sm text-xs font-bold text-[#292D57]">результат</p>
+            </div> 
           </div>
         </div>
         <!-- Слайд 3 -->
@@ -1519,15 +1547,43 @@
           <div class="mx-auto flex flex-col md:flex-row justify-between items-center md:items-start text-gray-dark md:space-x-4 space-x-0">
             <div class="flex-1 flex flex-col space-y-8 items-center md:items-start text-white text-center md:text-left">
               <h2 class="text-[30px] sm:text-[32px] xg:text-[44px] leading-[35px] xg:leading-[46.88px]">Расширение предприятия</h2>
-              <p class="text-[16px] sm:text-[18px] xl:text-[22px] leading-[25.78px]">
+              <p class="text-[16px] sm:text-[18px] xl:text-[22px] leading-[25.78px] lg:pr-[85px] md:pr-[70px] pr-0">
                 В верхнюю часть печатной формы счета добавлен текст:
                 <span class="text-[#FBE8A6]">Внимание! Ваш долг на [текущая дата] составляет [сумма], в том числе с истекшим сроком оплаты [сумма]</span>
               </p>
               <button class="bg-blue text-white text-base px-[60px] md:px-[80px] py-[12px] md:py-[17px] rounded-md self-center md:self-start">Подробнее</button>
             </div>
-            <div class="flex-1 flex items-center justify-center py-[60px] pr-0 md:pr-5">
-              <img src="/img/pc.png" alt="Компьютер" class="w-full md:w-auto">
+            <!-- желтый результат и пунктир -->
+            <div class="md:flex hidden absolute inset-0  flex-col items-center justify-center 
+            lg:top-36 lg:right-5 lg:left-0 2xl:top-36 2xl:-right-6 2xl:left-0 3xl:top-36 3xl:right-5 3xl:left-0 -top-36 right-12">
+              <div class="relative z-0 lg:hidden block">
+                <svg class="lg:hidden block w-32" viewBox="0 0 192 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M191 26.3334C44.7432 -42.5898 -43.8854 48.8897 24.4738 68" stroke="#AFC7EC" stroke-linecap="round" stroke-dasharray="2 2"/>
+                </svg>                    
+              </div>
+              <div class="bg-[#FCE181] p-2 rounded-lg text-center relative z-10 1xl:right-10 lg:right-5 right-3 lg:top-5 -top-3">
+                <p class="1xl:text-base text-sm font-bold text-[#292D57]">результат</p>
+              </div>
+              <div class="relative z-0 lg:block hidden">
+                <svg class="1xl:w-60 w-40" viewBox="0 0 241 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M240 67.0001C55.9999 177 -55.5003 31.0009 30.4997 0.501333" stroke="#AFC7EC" stroke-linecap="round" stroke-dasharray="2 2"/>
+                </svg>                  
+              </div>
             </div>
+            <div class="flex-1 flex items-center justify-center xs:py-[60px] py-[35px] pr-0 md:pr-5 relative">
+              <div class="hidden xs:block md:hidden absolute top-2 -right-3 mt-2 mr-2">
+                <div class="bg-[#FCE181] py-2 px-3 rounded-lg text-center">
+                  <p class="1xl:text-base md:text-sm text-xs font-bold text-[#292D57]">результат</p>
+                </div>
+                <svg class="w-24" viewBox="0 0 131 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.499862 87.5001C114 104 156.5 19.9999 114.001 1.00023" stroke="#AFC7EC" stroke-linecap="round" stroke-dasharray="2 2"/>
+                </svg>                                        
+              </div>
+              <img src="/img/pc.png" alt="Компьютер" class="w-full md:w-auto pt-8">
+            </div>   
+            <div class="block xs:hidden bg-[#FCE181] py-2 px-3 rounded-lg text-center mb-7">
+              <p class="1xl:text-base md:text-sm text-xs font-bold text-[#292D57]">результат</p>
+            </div> 
           </div>
         </div>
         <!-- Слайд 4 -->
@@ -1535,15 +1591,43 @@
           <div class="mx-auto flex flex-col md:flex-row justify-between items-center md:items-start text-gray-dark md:space-x-4 space-x-0">
             <div class="flex-1 flex flex-col space-y-8 items-center md:items-start text-white text-center md:text-left">
               <h2 class="text-[30px] sm:text-[32px] xg:text-[44px] leading-[35px] xg:leading-[46.88px]">Бухгалтерия предприятия</h2>
-              <p class="text-[16px] sm:text-[18px] xl:text-[22px] leading-[25.78px]">
+              <p class="text-[16px] sm:text-[18px] xl:text-[22px] leading-[25.78px] lg:pr-[85px] md:pr-[70px] pr-0">
                 В верхнюю часть печатной формы счета добавлен текст:
                 <span class="text-[#FBE8A6]">Внимание! Ваш долг на [текущая дата] составляет [сумма], в том числе с истекшим сроком оплаты [сумма]</span>
               </p>
               <button class="bg-blue text-white text-base px-[60px] md:px-[80px] py-[12px] md:py-[17px] rounded-md self-center md:self-start">Подробнее</button>
             </div>
-            <div class="flex-1 flex items-center justify-center py-[60px] pr-0 md:pr-5">
-              <img src="/img/pc.png" alt="Компьютер" class="w-full md:w-auto">
+            <!-- желтый результат и пунктир -->
+            <div class="md:flex hidden absolute inset-0  flex-col items-center justify-center 
+            lg:top-36 lg:right-5 lg:left-0 2xl:top-36 2xl:-right-6 2xl:left-0 3xl:top-36 3xl:right-5 3xl:left-0 -top-36 right-12">
+              <div class="relative z-0 lg:hidden block">
+                <svg class="lg:hidden block w-32" viewBox="0 0 192 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M191 26.3334C44.7432 -42.5898 -43.8854 48.8897 24.4738 68" stroke="#AFC7EC" stroke-linecap="round" stroke-dasharray="2 2"/>
+                </svg>                    
+              </div>
+              <div class="bg-[#FCE181] p-2 rounded-lg text-center relative z-10 1xl:right-10 lg:right-5 right-3 lg:top-5 -top-3">
+                <p class="1xl:text-base text-sm font-bold text-[#292D57]">результат</p>
+              </div>
+              <div class="relative z-0 lg:block hidden">
+                <svg class="1xl:w-60 w-40" viewBox="0 0 241 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M240 67.0001C55.9999 177 -55.5003 31.0009 30.4997 0.501333" stroke="#AFC7EC" stroke-linecap="round" stroke-dasharray="2 2"/>
+                </svg>                  
+              </div>
             </div>
+            <div class="flex-1 flex items-center justify-center xs:py-[60px] py-[35px] pr-0 md:pr-5 relative">
+              <div class="hidden xs:block md:hidden absolute top-2 -right-3 mt-2 mr-2">
+                <div class="bg-[#FCE181] py-2 px-3 rounded-lg text-center">
+                  <p class="1xl:text-base md:text-sm text-xs font-bold text-[#292D57]">результат</p>
+                </div>
+                <svg class="w-24" viewBox="0 0 131 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.499862 87.5001C114 104 156.5 19.9999 114.001 1.00023" stroke="#AFC7EC" stroke-linecap="round" stroke-dasharray="2 2"/>
+                </svg>                                        
+              </div>
+              <img src="/img/pc.png" alt="Компьютер" class="w-full md:w-auto pt-8">
+            </div>   
+            <div class="block xs:hidden bg-[#FCE181] py-2 px-3 rounded-lg text-center mb-7">
+              <p class="1xl:text-base md:text-sm text-xs font-bold text-[#292D57]">результат</p>
+            </div> 
           </div>
         </div>
       </div>
@@ -1666,170 +1750,170 @@
           <h3 class="text-[20px] md:text-[24px] lg:text-[28px] font-bold text-center mb-6 text-[#292D32]">Заказать консультацию</h3>
           <div class="flex items-start ">
             <svg class="w-[120px] xs:w-[150px] sm:w-[170px] md:w-[200px] gd:w-[218px] h-auto" viewBox="0 0 218 346" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g filter="url(#filter0_d_4_1162)">
-              <path d="M191.474 154.947C191.474 198.722 182.785 240.704 167.318 271.657C151.851 302.611 130.874 320 109 320C87.1266 320 66.149 302.611 50.682 271.657C35.2151 240.704 26.5259 198.722 26.5259 154.947L109 154.947L191.474 154.947Z" fill="url(#paint0_linear_4_1162)"/>
+              <g filter="url(#filter0_d_429_57)">
+              <path d="M191.474 154.947C191.474 198.722 182.785 240.704 167.318 271.657C151.851 302.61 130.873 320 109 320C87.1261 320 66.1485 302.61 50.6815 271.657C35.2146 240.704 26.5254 198.722 26.5254 154.947L109 154.947L191.474 154.947Z" fill="url(#paint0_linear_429_57)"/>
               </g>
-              <g filter="url(#filter1_d_4_1162)">
-              <path d="M24.4639 206.526C24.4639 235.013 21.0022 258.105 16.732 258.105C12.4617 258.105 9 235.013 9 206.526C9 178.04 12.4617 154.947 16.732 154.947C21.0022 154.947 24.4639 178.04 24.4639 206.526Z" fill="url(#paint1_linear_4_1162)"/>
+              <g filter="url(#filter1_d_429_57)">
+              <path d="M24.4639 206.526C24.4639 235.012 21.0022 258.105 16.732 258.105C12.4617 258.105 9 235.012 9 206.526C9 178.04 12.4617 154.947 16.732 154.947C21.0022 154.947 24.4639 178.04 24.4639 206.526Z" fill="url(#paint1_linear_429_57)"/>
               </g>
-              <g filter="url(#filter2_d_4_1162)">
-              <path d="M209 206.526C209 235.013 205.538 258.105 201.268 258.105C196.998 258.105 193.536 235.013 193.536 206.526C193.536 178.04 196.998 154.947 201.268 154.947C205.538 154.947 209 178.04 209 206.526Z" fill="url(#paint2_linear_4_1162)"/>
+              <g filter="url(#filter2_d_429_57)">
+              <path d="M209 206.526C209 235.012 205.538 258.105 201.268 258.105C196.998 258.105 193.536 235.012 193.536 206.526C193.536 178.04 196.998 154.947 201.268 154.947C205.538 154.947 209 178.04 209 206.526Z" fill="url(#paint2_linear_429_57)"/>
               </g>
-              <g filter="url(#filter3_d_4_1162)">
-              <ellipse cx="109" cy="154.432" rx="82.4743" ry="11.8632" fill="url(#paint3_linear_4_1162)"/>
+              <g filter="url(#filter3_d_429_57)">
+              <ellipse cx="109" cy="154.432" rx="82.4743" ry="11.8632" fill="url(#paint3_linear_429_57)"/>
               </g>
-              <path d="M166.718 205.942V205.939L166.748 192.733C166.748 192.733 166.748 192.733 166.748 192.733C166.748 191.749 166.363 190.63 165.692 189.636C165.02 188.641 164.124 187.863 163.21 187.49L163.209 187.489L146.462 180.63L166.718 205.942ZM166.718 205.942C166.718 220.174 156.37 233.559 142.219 237.472C141.405 237.694 140.51 237.694 139.696 237.472C125.545 233.559 115.197 220.174 115.197 205.942V192.733C115.197 191.746 115.577 190.626 116.244 189.634C116.91 188.641 117.805 187.865 118.731 187.491L118.731 187.491M166.718 205.942L118.731 187.491M118.731 187.491L118.737 187.489M118.731 187.491L118.737 187.489M118.737 187.489L135.484 180.63L118.737 187.489Z" fill="url(#paint4_linear_4_1162)" stroke="url(#paint5_radial_4_1162)" stroke-width="2.06186"/>
-              <g filter="url(#filter4_d_4_1162)">
-              <rect width="17.5748" height="17.5748" rx="2.49204" transform="matrix(0.865163 0.501178 -0.865163 0.501178 140.766 187.958)" fill="#242424"/>
+              <path d="M166.718 205.939V205.942C166.718 220.174 156.369 233.559 142.218 237.473C141.404 237.694 140.51 237.694 139.697 237.473C125.545 233.559 115.197 220.174 115.197 205.942V192.733C115.197 191.746 115.577 190.626 116.243 189.634C116.91 188.642 117.804 187.865 118.731 187.492L118.731 187.492L118.736 187.489L135.483 180.63C138.992 179.197 142.952 179.197 146.461 180.63L163.208 187.489L163.209 187.49C164.124 187.863 165.02 188.641 165.691 189.636C166.363 190.63 166.748 191.749 166.748 192.733C166.748 192.733 166.748 192.733 166.748 192.733L166.718 205.939Z" fill="url(#paint4_linear_429_57)" stroke="url(#paint5_radial_429_57)" stroke-width="2.06186"/>
+              <g filter="url(#filter4_d_429_57)">
+              <rect width="17.5748" height="17.5748" rx="2.49204" transform="matrix(0.865163 0.501178 -0.865163 0.501178 140.765 187.958)" fill="#242424"/>
               </g>
-              <path d="M143.851 197.902L143.559 198.071C143.008 198.39 142.436 198.631 141.843 198.796C141.256 198.96 140.668 199.051 140.078 199.068C139.491 199.083 138.924 199.028 138.377 198.902C137.833 198.774 137.33 198.576 136.869 198.309C136.404 198.039 136.059 197.746 135.835 197.429C135.618 197.112 135.521 196.783 135.544 196.441C135.573 196.099 135.728 195.757 136.008 195.416C136.295 195.074 136.714 194.743 137.264 194.425L137.556 194.256C138.107 193.937 138.677 193.694 139.267 193.528C139.86 193.364 140.449 193.273 141.032 193.256C141.622 193.239 142.189 193.294 142.733 193.422C143.284 193.55 143.791 193.749 144.256 194.018C144.718 194.285 145.057 194.577 145.275 194.894C145.499 195.211 145.596 195.541 145.566 195.883C145.54 196.222 145.385 196.564 145.102 196.908C144.818 197.252 144.401 197.583 143.851 197.902ZM141.799 197.051L142.1 196.876C142.456 196.67 142.738 196.471 142.946 196.278C143.16 196.085 143.3 195.901 143.366 195.725C143.432 195.549 143.424 195.384 143.341 195.229C143.265 195.075 143.117 194.933 142.896 194.806C142.666 194.672 142.417 194.583 142.15 194.539C141.886 194.493 141.604 194.49 141.304 194.531C141.004 194.571 140.688 194.653 140.355 194.777C140.028 194.901 139.687 195.066 139.331 195.272L139.03 195.447C138.677 195.651 138.392 195.849 138.174 196.04C137.963 196.231 137.821 196.414 137.749 196.59C137.68 196.768 137.683 196.934 137.759 197.088C137.838 197.245 137.993 197.39 138.224 197.524C138.444 197.652 138.688 197.738 138.955 197.782C139.222 197.826 139.508 197.826 139.811 197.784C140.117 197.744 140.435 197.663 140.765 197.541C141.101 197.419 141.446 197.256 141.799 197.051Z" fill="white"/>
-              <rect width="17.572" height="17.6162" rx="2.49204" transform="matrix(0.865299 -0.501257 2.19568e-08 1 141.655 208.51)" fill="url(#paint6_linear_4_1162)"/>
-              <path d="M150.442 207.567L150.442 215.888L148.706 216.894L148.706 208.572L150.442 207.567ZM152.608 206.312L152.608 207.861L146.59 211.347L146.59 209.798L152.608 206.312Z" fill="white"/>
-              <rect width="17.572" height="17.6162" rx="2.49204" transform="matrix(0.865299 0.501257 -2.19568e-08 1 124.464 199.702)" fill="#FF1725"/>
-              <path d="M136.163 217.421L136.064 220.896L134.427 219.948L134.427 217.942L133.893 217.632L133.893 216.106L136.163 217.421ZM129.007 214.802L129.007 206.481L130.738 207.483L130.738 214.262L133.324 215.76L133.324 208.982L135.065 209.99L135.065 218.311L129.007 214.802Z" fill="white"/>
-              <g filter="url(#filter5_d_4_1162)">
-              <path d="M191.475 108.526C191.475 97.6889 189.341 86.9575 185.197 76.9449C181.052 66.9324 174.977 57.8347 167.318 50.1715C159.66 42.5082 150.568 36.4293 140.562 32.282C130.556 28.1347 119.831 26.0001 109 26.0001C98.1697 26.0001 87.4451 28.1347 77.4388 32.282C67.4326 36.4293 58.3407 42.5082 50.6823 50.1715C43.0238 57.8347 36.9488 66.9324 32.8041 76.9449C28.6594 86.9575 26.5261 97.6889 26.5261 108.526C26.5261 119.364 41.4746 139.474 109 139.474C176.526 139.474 191.475 119.364 191.475 108.526Z" fill="url(#paint7_linear_4_1162)"/>
+              <path d="M143.849 197.902L143.558 198.071C143.007 198.39 142.435 198.631 141.842 198.796C141.255 198.96 140.667 199.051 140.077 199.068C139.49 199.083 138.923 199.028 138.376 198.902C137.832 198.774 137.329 198.576 136.868 198.309C136.403 198.039 136.058 197.746 135.834 197.429C135.617 197.112 135.519 196.783 135.542 196.441C135.572 196.099 135.727 195.757 136.007 195.416C136.294 195.074 136.713 194.743 137.263 194.425L137.555 194.256C138.105 193.937 138.676 193.694 139.266 193.528C139.859 193.364 140.447 193.273 141.031 193.256C141.621 193.239 142.188 193.294 142.732 193.422C143.282 193.55 143.79 193.749 144.255 194.018C144.716 194.285 145.056 194.577 145.273 194.894C145.498 195.211 145.595 195.541 145.565 195.883C145.539 196.222 145.384 196.564 145.1 196.908C144.817 197.252 144.4 197.583 143.849 197.902ZM141.797 197.051L142.099 196.876C142.455 196.67 142.737 196.471 142.944 196.278C143.159 196.085 143.299 195.901 143.365 195.725C143.431 195.549 143.422 195.384 143.34 195.229C143.264 195.075 143.116 194.933 142.895 194.806C142.664 194.672 142.415 194.583 142.148 194.539C141.885 194.493 141.603 194.49 141.303 194.531C141.003 194.571 140.686 194.653 140.354 194.777C140.027 194.901 139.686 195.066 139.33 195.272L139.028 195.447C138.676 195.651 138.39 195.849 138.173 196.04C137.962 196.231 137.82 196.414 137.748 196.59C137.678 196.768 137.682 196.934 137.758 197.088C137.837 197.245 137.992 197.39 138.222 197.524C138.443 197.652 138.687 197.738 138.954 197.782C139.221 197.826 139.506 197.826 139.81 197.784C140.116 197.744 140.434 197.663 140.764 197.541C141.1 197.419 141.445 197.256 141.797 197.051Z" fill="white"/>
+              <rect width="17.572" height="17.6162" rx="2.49204" transform="matrix(0.865299 -0.501257 2.19568e-08 1 141.654 208.51)" fill="url(#paint6_linear_429_57)"/>
+              <path d="M150.442 207.567L150.442 215.888L148.706 216.894L148.706 208.573L150.442 207.567ZM152.608 206.312L152.608 207.861L146.589 211.347L146.589 209.799L152.608 206.312Z" fill="white"/>
+              <rect width="17.572" height="17.6162" rx="2.49204" transform="matrix(0.865299 0.501257 -2.19568e-08 1 124.463 199.702)" fill="#FF1725"/>
+              <path d="M136.161 217.421L136.062 220.896L134.426 219.948L134.426 217.942L133.891 217.632L133.891 216.106L136.161 217.421ZM129.005 214.802L129.005 206.481L130.736 207.483L130.736 214.262L133.323 215.76L133.323 208.982L135.064 209.99L135.064 218.311L129.005 214.802Z" fill="white"/>
+              <g filter="url(#filter5_d_429_57)">
+              <path d="M191.475 108.526C191.475 97.6888 189.342 86.9574 185.197 76.9449C181.052 66.9323 174.977 57.8347 167.319 50.1714C159.66 42.5081 150.568 36.4293 140.562 32.2819C130.556 28.1346 119.831 26 109.001 26C98.17 26 87.4453 28.1346 77.4391 32.2819C67.4329 36.4293 58.341 42.5081 50.6825 50.1714C43.0241 57.8347 36.9491 66.9323 32.8043 76.9449C28.6596 86.9574 26.5264 97.6888 26.5264 108.526C26.5264 119.364 41.4748 139.474 109.001 139.474C176.526 139.474 191.475 119.364 191.475 108.526Z" fill="url(#paint7_linear_429_57)"/>
               </g>
-              <path d="M168.794 101.493C168.794 93.6111 167.247 85.8064 164.242 78.5246C161.238 71.2427 156.833 64.6263 151.281 59.053C145.728 53.4797 139.137 49.0587 131.882 46.0425C124.628 43.0262 116.852 41.4738 109 41.4738C101.148 41.4738 93.3726 43.0262 86.118 46.0425C78.8635 49.0587 72.2719 53.4797 66.7195 59.053C61.1671 64.6263 56.7628 71.2427 53.7578 78.5246C50.7529 85.8064 49.2063 93.6111 49.2063 101.493C49.2063 109.375 60.0439 124 109 124C157.956 124 168.794 109.375 168.794 101.493Z" fill="url(#paint8_radial_4_1162)"/>
-              <g filter="url(#filter6_d_4_1162)">
-              <ellipse cx="14.4333" cy="9.28403" rx="14.4333" ry="9.28403" transform="matrix(0.984789 0.173754 -0.173542 0.984827 75.1091 73.4528)" fill="url(#paint9_radial_4_1162)"/>
+              <path d="M168.795 101.493C168.795 93.6109 167.248 85.8063 164.243 78.5244C161.238 71.2426 156.834 64.6261 151.282 59.0528C145.729 53.4795 139.138 49.0586 131.883 46.0423C124.628 43.0261 116.853 41.4736 109.001 41.4736C101.149 41.4736 93.3733 43.0261 86.1188 46.0423C78.8642 49.0586 72.2726 53.4795 66.7202 59.0528C61.1679 64.6261 56.7635 71.2426 53.7586 78.5244C50.7536 85.8063 49.207 93.6109 49.207 101.493C49.207 109.375 60.0447 124 109.001 124C157.957 124 168.795 109.375 168.795 101.493Z" fill="url(#paint8_radial_429_57)"/>
+              <g filter="url(#filter6_d_429_57)">
+              <ellipse cx="14.4333" cy="9.28403" rx="14.4333" ry="9.28403" transform="matrix(0.984789 0.173754 -0.173542 0.984827 75.1094 73.4526)" fill="url(#paint9_radial_429_57)"/>
               </g>
-              <g filter="url(#filter7_d_4_1162)">
-              <ellipse cx="14.4332" cy="9.2841" rx="14.4332" ry="9.2841" transform="matrix(0.990256 -0.139259 0.139087 0.99028 115.907 77.4727)" fill="url(#paint10_radial_4_1162)"/>
+              <g filter="url(#filter7_d_429_57)">
+              <ellipse cx="14.4332" cy="9.2841" rx="14.4332" ry="9.2841" transform="matrix(0.990256 -0.139259 0.139087 0.99028 115.908 77.4727)" fill="url(#paint10_radial_429_57)"/>
               </g>
               <defs>
-              <filter id="filter0_d_4_1162" x="0.752672" y="129.174" width="216.495" height="216.599" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <filter id="filter0_d_429_57" x="0.752184" y="129.174" width="216.495" height="216.599" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
               <feFlood flood-opacity="0" result="BackgroundImageFix"/>
               <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
               <feOffset/>
               <feGaussianBlur stdDeviation="12.8866"/>
               <feComposite in2="hardAlpha" operator="out"/>
               <feColorMatrix type="matrix" values="0 0 0 0 0.327257 0 0 0 0 0.454635 0 0 0 0 0.604167 0 0 0 0.38 0"/>
-              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_1162"/>
-              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_1162" result="shape"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_429_57"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_429_57" result="shape"/>
               </filter>
-              <filter id="filter1_d_4_1162" x="2.81443" y="148.762" width="29.8969" height="117.591" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <filter id="filter1_d_429_57" x="2.81443" y="148.762" width="29.8969" height="117.591" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
               <feFlood flood-opacity="0" result="BackgroundImageFix"/>
               <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
               <feOffset dx="1.03093" dy="1.03093"/>
               <feGaussianBlur stdDeviation="3.60825"/>
               <feComposite in2="hardAlpha" operator="out"/>
               <feColorMatrix type="matrix" values="0 0 0 0 0.203576 0 0 0 0 0.501692 0 0 0 0 0.595833 0 0 0 0.34 0"/>
-              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_1162"/>
-              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_1162" result="shape"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_429_57"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_429_57" result="shape"/>
               </filter>
-              <filter id="filter2_d_4_1162" x="187.351" y="148.762" width="29.8969" height="117.591" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <filter id="filter2_d_429_57" x="187.351" y="148.762" width="29.8969" height="117.591" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
               <feFlood flood-opacity="0" result="BackgroundImageFix"/>
               <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
               <feOffset dx="1.03093" dy="1.03093"/>
               <feGaussianBlur stdDeviation="3.60825"/>
               <feComposite in2="hardAlpha" operator="out"/>
               <feColorMatrix type="matrix" values="0 0 0 0 0.203576 0 0 0 0 0.501692 0 0 0 0 0.595833 0 0 0 0.34 0"/>
-              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_1162"/>
-              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_1162" result="shape"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_429_57"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_429_57" result="shape"/>
               </filter>
-              <filter id="filter3_d_4_1162" x="18.5259" y="134.569" width="180.948" height="39.7263" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <filter id="filter3_d_429_57" x="18.5254" y="134.568" width="180.948" height="39.7261" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
               <feFlood flood-opacity="0" result="BackgroundImageFix"/>
               <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
               <feOffset/>
               <feGaussianBlur stdDeviation="4"/>
               <feComposite in2="hardAlpha" operator="out"/>
               <feColorMatrix type="matrix" values="0 0 0 0 0.425174 0 0 0 0 0.553156 0 0 0 0 0.645833 0 0 0 0.18 0"/>
-              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_1162"/>
-              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_1162" result="shape"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_429_57"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_429_57" result="shape"/>
               </filter>
-              <filter id="filter4_d_4_1162" x="126.719" y="188.689" width="28.0933" height="17.3548" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <filter id="filter4_d_429_57" x="126.718" y="188.689" width="28.0938" height="17.3551" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
               <feFlood flood-opacity="0" result="BackgroundImageFix"/>
               <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
               <feOffset dy="1.0973"/>
               <feGaussianBlur stdDeviation="0.0522525"/>
               <feComposite in2="hardAlpha" operator="out"/>
               <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.0901961 0 0 0 0 0.145098 0 0 0 1 0"/>
-              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_1162"/>
-              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_1162" result="shape"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_429_57"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_429_57" result="shape"/>
               </filter>
-              <filter id="filter5_d_4_1162" x="0.752916" y="0.226854" width="216.495" height="165.02" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <filter id="filter5_d_429_57" x="0.75316" y="0.226793" width="216.495" height="165.02" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
               <feFlood flood-opacity="0" result="BackgroundImageFix"/>
               <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
               <feOffset/>
               <feGaussianBlur stdDeviation="12.8866"/>
               <feComposite in2="hardAlpha" operator="out"/>
               <feColorMatrix type="matrix" values="0 0 0 0 0.327257 0 0 0 0 0.454635 0 0 0 0 0.604167 0 0 0 0.38 0"/>
-              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_1162"/>
-              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_1162" result="shape"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_429_57"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_429_57" result="shape"/>
               </filter>
-              <filter id="filter6_d_4_1162" x="57.9416" y="60.1566" width="59.5401" height="49.8943" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <filter id="filter6_d_429_57" x="57.9423" y="60.1567" width="59.5392" height="49.8942" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
               <feFlood flood-opacity="0" result="BackgroundImageFix"/>
               <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
               <feOffset/>
               <feGaussianBlur stdDeviation="7.73196"/>
               <feComposite in2="hardAlpha" operator="out"/>
               <feColorMatrix type="matrix" values="0 0 0 0 0.180392 0 0 0 0 1 0 0 0 0 1 0 0 0 0.88 0"/>
-              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_1162"/>
-              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_1162" result="shape"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_429_57"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_429_57" result="shape"/>
               </filter>
-              <filter id="filter7_d_4_1162" x="101.676" y="59.7797" width="59.6312" height="49.7538" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <filter id="filter7_d_429_57" x="101.677" y="59.7797" width="59.631" height="49.7535" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
               <feFlood flood-opacity="0" result="BackgroundImageFix"/>
               <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
               <feOffset/>
               <feGaussianBlur stdDeviation="7.73196"/>
               <feComposite in2="hardAlpha" operator="out"/>
               <feColorMatrix type="matrix" values="0 0 0 0 0.180392 0 0 0 0 1 0 0 0 0 1 0 0 0 0.88 0"/>
-              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_1162"/>
-              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_1162" result="shape"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_429_57"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_429_57" result="shape"/>
               </filter>
-              <linearGradient id="paint0_linear_4_1162" x1="26.5259" y1="237.474" x2="191.042" y2="155.164" gradientUnits="userSpaceOnUse">
+              <linearGradient id="paint0_linear_429_57" x1="26.5254" y1="237.474" x2="191.041" y2="155.164" gradientUnits="userSpaceOnUse">
               <stop stop-color="#F8F8F8"/>
               <stop offset="0.99" stop-color="#E3EEFF"/>
               <stop offset="1" stop-color="#E3EEFF"/>
               </linearGradient>
-              <linearGradient id="paint1_linear_4_1162" x1="9" y1="206.526" x2="24.4639" y2="206.526" gradientUnits="userSpaceOnUse">
+              <linearGradient id="paint1_linear_429_57" x1="9" y1="206.526" x2="24.4639" y2="206.526" gradientUnits="userSpaceOnUse">
               <stop stop-color="#F3E7E9"/>
               <stop offset="0.99" stop-color="#E3EEFF"/>
               <stop offset="1" stop-color="#E3EEFF"/>
               </linearGradient>
-              <linearGradient id="paint2_linear_4_1162" x1="193.536" y1="206.526" x2="209" y2="206.526" gradientUnits="userSpaceOnUse">
+              <linearGradient id="paint2_linear_429_57" x1="193.536" y1="206.526" x2="209" y2="206.526" gradientUnits="userSpaceOnUse">
               <stop stop-color="#F3E7E9"/>
               <stop offset="0.99" stop-color="#E3EEFF"/>
               <stop offset="1" stop-color="#E3EEFF"/>
               </linearGradient>
-              <linearGradient id="paint3_linear_4_1162" x1="26.5259" y1="154.432" x2="191.474" y2="154.432" gradientUnits="userSpaceOnUse">
+              <linearGradient id="paint3_linear_429_57" x1="26.5254" y1="154.432" x2="191.474" y2="154.432" gradientUnits="userSpaceOnUse">
               <stop stop-color="#F8F8F8"/>
               <stop offset="0.9999" stop-color="#E3EEFF"/>
               <stop offset="1" stop-color="#D3E5FF"/>
               </linearGradient>
-              <linearGradient id="paint4_linear_4_1162" x1="114.167" y1="208.597" x2="167.779" y2="208.597" gradientUnits="userSpaceOnUse">
+              <linearGradient id="paint4_linear_429_57" x1="114.166" y1="208.597" x2="167.779" y2="208.597" gradientUnits="userSpaceOnUse">
               <stop stop-color="#F3E7E9"/>
               <stop offset="0.99" stop-color="#E3EEFF"/>
               <stop offset="1" stop-color="#E3EEFF"/>
               </linearGradient>
-              <radialGradient id="paint5_radial_4_1162" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(124.293 232.837) rotate(94.6204) scale(50.1473 46.1483)">
+              <radialGradient id="paint5_radial_429_57" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(124.293 232.837) rotate(94.6204) scale(50.1473 46.1483)">
               <stop stop-color="#4154FF"/>
               <stop offset="0.924431" stop-color="#23242B"/>
               </radialGradient>
-              <linearGradient id="paint6_linear_4_1162" x1="0" y1="17.6162" x2="17.6161" y2="0.0442162" gradientUnits="userSpaceOnUse">
+              <linearGradient id="paint6_linear_429_57" x1="0" y1="17.6162" x2="17.6161" y2="0.0442162" gradientUnits="userSpaceOnUse">
               <stop stop-color="#1C32FF"/>
               <stop offset="1" stop-color="#3485FF"/>
               </linearGradient>
-              <linearGradient id="paint7_linear_4_1162" x1="26.5261" y1="82.7369" x2="191.475" y2="82.7369" gradientUnits="userSpaceOnUse">
+              <linearGradient id="paint7_linear_429_57" x1="26.5264" y1="82.7368" x2="191.475" y2="82.7368" gradientUnits="userSpaceOnUse">
               <stop stop-color="#F3E7E9"/>
               <stop offset="0.99" stop-color="#E3EEFF"/>
               <stop offset="1" stop-color="#E3EEFF"/>
               </linearGradient>
-              <radialGradient id="paint8_radial_4_1162" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(71.7951 115.998) rotate(97.4846) scale(69.1737 102.394)">
+              <radialGradient id="paint8_radial_429_57" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(71.7958 115.997) rotate(97.4846) scale(69.1737 102.394)">
               <stop stop-color="#4154FF"/>
               <stop offset="0.924431" stop-color="#23242B"/>
               </radialGradient>
-              <radialGradient id="paint9_radial_4_1162" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(14.4333 9.28403) rotate(90) scale(9.28403 14.4333)">
+              <radialGradient id="paint9_radial_429_57" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(14.4333 9.28403) rotate(90) scale(9.28403 14.4333)">
               <stop stop-color="#2EFFFF"/>
               <stop offset="1" stop-color="#00C2FF"/>
               </radialGradient>
-              <radialGradient id="paint10_radial_4_1162" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(14.4332 9.2841) rotate(90) scale(9.2841 14.4332)">
+              <radialGradient id="paint10_radial_429_57" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(14.4332 9.2841) rotate(90) scale(9.2841 14.4332)">
               <stop stop-color="#2EFFFF"/>
               <stop offset="1" stop-color="#00C2FF"/>
               </radialGradient>
               </defs>
-            </svg>     
+            </svg>
             <svg class="w-[40px] sm:w-[45px] md:w-[55px] gd:w-[68px] h-auto" viewBox="0 0 68 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M50.6668 0.100006H17.3334C7.33342 0.100006 0.666748 6.76667 0.666748 16.7667V36.7667C0.666748 46.7667 7.33342 53.4333 17.3334 53.4333V60.5333C17.3334 63.2 20.3001 64.8 22.5001 63.3L37.3334 53.4333H50.6668C60.6668 53.4333 67.3334 46.7667 67.3334 36.7667V16.7667C67.3334 6.76667 60.6668 0.100006 50.6668 0.100006ZM34.0001 40.6667C32.6001 40.6667 31.5001 39.5333 31.5001 38.1667C31.5001 36.8 32.6001 35.6667 34.0001 35.6667C35.4001 35.6667 36.5001 36.8 36.5001 38.1667C36.5001 39.5333 35.4001 40.6667 34.0001 40.6667ZM38.2001 26.8333C36.9001 27.7 36.5001 28.2667 36.5001 29.2V29.9C36.5001 31.2667 35.3667 32.4 34.0001 32.4C32.6334 32.4 31.5001 31.2667 31.5001 29.9V29.2C31.5001 25.3333 34.3334 23.4333 35.4001 22.7C36.6334 21.8667 37.0334 21.3 37.0334 20.4333C37.0334 18.7667 35.6667 17.4 34.0001 17.4C32.3334 17.4 30.9667 18.7667 30.9667 20.4333C30.9667 21.8 29.8334 22.9333 28.4667 22.9333C27.1001 22.9333 25.9667 21.8 25.9667 20.4333C25.9667 16 29.5667 12.4 34.0001 12.4C38.4334 12.4 42.0334 16 42.0334 20.4333C42.0334 24.2333 39.2334 26.1333 38.2001 26.8333Z" fill="url(#paint0_linear_4_1160)"/>
                 <defs>
